@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100%/3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img {
+      width: 100%;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="column"><img src="./images/crusade.jpg" />
+        <h3>Last Crusade</h3>
+        <p>Tommy Callahan Jr. is a slow-witted, clumsy guy who recently graduated college after attending for seven
+          years. His father, Big Tom Callahan, owns an auto parts factory in Ohio. When Tommy arrives back home, he
+          finds he has a position at the factory waiting for him. His dad also introduces Tommy to the new brake pad
+          division of the factory and to Tommy's soon-to-be stepmother, Beverly, and her son Paul. But when Big Tom
+          dies, the factory threatens to go under unless the new brake pads are to be sold. Therefore, Tommy must go on
+          the road to sell them, along with the assistance of Richard, Big Tom's right-hand man. Will Tommy save the
+          company, or will the factory, and the town, go under?</p>
+      </div>
+      <div class="column"><img src="./images/raiders.jpg" />
+        <h3>Raiders of the Lost Ark</h3>
+        <p>Following a ship wreck, a baby is rescued by a clan of Ninja warriors and raised by them as one of their own.
+          But Haru (Chris Farley), as he is called, never quite fits in, nor does he manage to make a worthy Ninja.
+          However, the good-natured and persevering Haru, in his own bumbling way, and with some help from Gobei (Robin
+          Shou), manages to prove himself to be a winner in the end.</p>
+      </div>
+      <div class="column"><img src="./images/temple.jpg" />
+        <h3>Temple of Doom</h3>
+        <p>Comedy about the prospective Washington State Governor Al Donnelly whose only stumbling block on the road to
+          power is his embarrassing younger brother Mike. To keep him out of mischief, Al forces one of his aides, Steve
+          Dodds to keep an eye on him during the election. However, this is easier said than done...</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
